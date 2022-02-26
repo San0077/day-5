@@ -1,0 +1,48 @@
+question 1 (A)
+ (function(arr){
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2==1){
+            console.log(arr[i])
+        }
+    }
+})([2,3,5,7,6,8])
+(B)
+(function(sting){
+  var cap = sting.toUpperCase()
+  console.log(cap)
+})("son")
+(c)-
+(function (...sting){
+    let sum =0;
+  for(let i = 0;i<sting.length;i++){
+      sum = sum  +sting[i];
+     
+  }
+   console.log(sum)
+   
+})(2,5,766,987,6)
+ (g)----
+
+(function (sting){
+   var non =[]
+   sting.filter((item,index)=>{
+       var same =sting.indexOf(item)
+       if (same && same !=index){
+           same.splice(item,1)
+        }else{non.push(item)}
+    }) 
+ 
+ 
+   console.log(non)
+})([3,5,4,5,4,6,4,7])
+q (h)--
+(function (arr,b){
+   
+    var arr1 = []
+     for(let i =b ;i<arr.length;i++){
+         arr1.push(arr[i])
+     }
+    
+   
+     console.log(...arr1,...arr.slice(0,b))
+})([1,2,3,4],1)
